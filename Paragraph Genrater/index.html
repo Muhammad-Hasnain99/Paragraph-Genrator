@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Paragraph Genrater</title>
+</head>
+<body class="bg-[#f1f5f8]">
+    <section class="section-center flex flex-col justify-center items-center space-y-6 mt-12">
+        <h3 class="text-[rgb(18,42,65)] text-3xl font-bold font-mono">TIRED OF BORING LOREM IPSUM?</h3>
+        <form class="lorem-form space-x-2 f">
+            <label class="text-2xl text-[rgb(18,42,65)] font-mono  font-light" for="amount">Paragraphs: </label>
+            <input class="w-[60px] text-lg rounded-lg  p-1 bg-white" type="number" name="amount" id="amount" placeholder="5">
+            <button type="submit" class="btn text-center h-[30px] font-light w-[120px]  text-lg  bg-[#49a6e9] text-[rgb(18,42,65)]  rounded-md hover:text-[#49a6e9] hover:bg-[#c5e5fc] transition duration-700 ease-in-out">GENRATE</button>
+        </form>
+        <article class="lorem-text space-x-4 flex flex-col justify-center items-center text-center"></article>
+    </section>
+    <script src="server.js"></script>
+</body>
+</html>
